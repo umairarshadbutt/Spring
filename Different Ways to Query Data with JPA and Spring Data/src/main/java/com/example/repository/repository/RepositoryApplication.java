@@ -84,15 +84,5 @@ public class RepositoryApplication implements CommandLineRunner {
         }
 
 
-        Product productToUpdate= productRepository.findByType("SPECIFIC");
-        if(productToUpdate != null){
-            LOG.info("Before update product detail: "+ productToUpdate);
-            productToUpdate.setName("Updated Product");
-            productToUpdate.setDescription("Updated description");
-
-            Product updated = productRepository.save(productToUpdate);
-            LOG.info("Updated product details: "+ updated.toString());
-
-        }
     }
 }
