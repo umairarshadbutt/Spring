@@ -47,6 +47,15 @@ public class RepositoryApplication implements CommandLineRunner {
         product2.setPrice(15.0);
         productRepository.save(product2);
 
+
+        Product product3 = new Product();
+        product3.setName("Tester Product");
+        product3.setDescription("Description");
+        product3.setCategory("Test");
+        product3.setType("SPECIFIC");
+        product3.setPrice(18.0);
+        productRepository.save(product3);
+
 //        List<Product> products= productRepository.findAll();
 //        for (Product product: products){
 //            LOG.info("Products found: "+ product.toString());
