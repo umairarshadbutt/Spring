@@ -51,9 +51,14 @@ public class RepositoryApplication implements CommandLineRunner {
 //            LOG.info("Products found: "+ product.toString());
 //        }
 
-        Product resultProduct = productRepository.findByType("Custom");
-        LOG.info("CUSTOM type of product found "+ resultProduct.toString());
+//        Product resultProduct = productRepository.findByType("Custom");
+//        LOG.info("CUSTOM type of product found "+ resultProduct.toString());
 
+
+        List<Product> results = productRepository.findByDescriptionAndCategory("This is tester product","Test");
+        for (Product product: results){
+            LOG.info("Matching results are: "+ product.toString());
+        }
 
 
     }
