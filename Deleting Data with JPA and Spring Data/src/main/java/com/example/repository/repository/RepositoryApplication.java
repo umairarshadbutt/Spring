@@ -99,7 +99,7 @@ public class RepositoryApplication implements CommandLineRunner {
 
 
 
-        productRepository.delete(product3);//this technique is very costly
+        //productRepository.delete(product3);//this technique is very costly
 
         Product foundProduct =productRepository.findByType("General");
 
