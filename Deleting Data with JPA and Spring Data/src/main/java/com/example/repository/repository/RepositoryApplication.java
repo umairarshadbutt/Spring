@@ -56,6 +56,8 @@ public class RepositoryApplication implements CommandLineRunner {
         product3.setPrice(18.0);
         productRepository.save(product3);
 
+
+
 //        List<Product> products= productRepository.findAll();
 //        for (Product product: products){
 //            LOG.info("Products found: "+ product.toString());
@@ -93,6 +95,19 @@ public class RepositoryApplication implements CommandLineRunner {
             Product updated = productRepository.save(productToUpdate);
             LOG.info("Updated product details: "+ updated.toString());
 
+        }
+
+
+
+        productRepository.delete(product3);//this technique is very costly
+
+        Product foundProduct =productRepository.findByType("General");
+
+        if (foundProduct != null){
+            LOG.info("Product count in database: "+ productRepository.count());
+            productRepository.delete(foundProduct);
+            LOG.info("Product is deleted");
+            LOG.info("Product count in database: "+ productRepository.count());
         }
     }
 }
