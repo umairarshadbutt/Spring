@@ -49,4 +49,13 @@ public class ProductsController {
             return productToUpdate;
         }
     }
+
+    @RequestMapping(path = "{id}", method = RequestMethod.DELETE)
+    public void deleteProduct(@PathVariable(name = "id") String id){
+        Product foundProduct = productRepository.getOne(id);
+        if (foundProduct != null){
+            productRepository.delete(foundProduct);
+        }
+
+    }
 }
