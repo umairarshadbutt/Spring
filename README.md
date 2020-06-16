@@ -35,6 +35,22 @@ The Spring Framework maintains reference documentation ([published](https://docs
 
 - Updating Data with JPA and Spring Data
 
+
+
+## Author
+
+👤 **Umair Arshad**
+
+- Github: [@umairarshadbutt](https://github.com/umairarshadbutt)
+- Twitter: [@its_UmairArshad](https://twitter.com/its_UmairArshad)
+- Linkedin: [umair-arshad-butt](https://www.linkedin.com/in/umair-arshad-butt/)
+
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
 ## License
 
 The Spring Framework is released under version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
